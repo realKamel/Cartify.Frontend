@@ -15,10 +15,7 @@
           <div class="logo grid justify-center items-center">
             <div class="md:flex md:items-center md:gap-12">
               <a type="button" [routerLink]="['home']" class="flex mr-4">
-                <span
-                  class="self-center text-primary-600 hover:text-emerald-700 transition-colors text-2xl font-semibold whitespace-nowrap dark:text-white"
-                  >Fresh Cart</span
-                >
+                <span class="cartify-logo">Cartify</span>
               </a>
             </div>
           </div>
@@ -50,12 +47,12 @@
                 @defer (on immediate; hydrate on interaction) {
                   <div [class]="isMenuCollapsed() ? 'hidden' : 'block'">
                     <div
-                      class="absolute left-0 end-0 top-7 z-30 w-fit overflow-hidden rounded border border-emerald-500 bg-white shadow-sm"
+                      class="absolute left-0 end-0 top-7 z-30 w-fit overflow-hidden rounded border border-primary-500 bg-white shadow-sm"
                     >
                       <div role="menubar">
                         <a
                           [routerLink]="['/account', 'orders']"
-                          class="flex gap-2 text-nowrap items-center px-3 py-2 text-gray-700 text-base font-medium transition-colors hover:bg-emerald-50 hover:text-emerald-700"
+                          class="flex gap-2 text-nowrap items-center px-3 py-2 text-gray-700 text-base font-medium transition-colors hover:bg-primary-50 hover:text-primary-700"
                           role="menuitem"
                         >
                           <ng-icon name="lucideBoxes"></ng-icon>
@@ -63,7 +60,7 @@
                         </a>
                         <a
                           [routerLink]="['/account', 'profile']"
-                          class="flex gap-2 text-nowrap items-center px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-emerald-50 hover:text-emerald-700"
+                          class="flex gap-2 text-nowrap items-center px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-700"
                           role="menuitem"
                         >
                           <ng-icon name="lucideCircleUserRound"></ng-icon>
@@ -93,7 +90,7 @@
                   <p>wishlist</p>
                   <ng-icon name="lucideHeart"></ng-icon>
                   <span
-                    class="absolute top-[-10px] left-[100%] text-xs items-center justify-center rounded-full bg-emerald-100 p-1 text-emerald-900"
+                    class="absolute top-[-10px] left-[100%] text-xs items-center justify-center rounded-full bg-primary-100 p-1 text-primary-900"
                   >
                     @if (isWishlistLoading$()) {
                       <ng-icon
@@ -116,7 +113,7 @@
                 >
                   <p>Cart</p>
                   <span
-                    class="absolute top-[-10px] left-[100%] text-xs items-center justify-center rounded-full bg-emerald-100 p-1 text-emerald-900"
+                    class="absolute top-[-10px] left-[100%] text-xs items-center justify-center rounded-full bg-primary-100 p-1 text-primary-900"
                   >
                     @if (isCartLoading$()) {
                       <ng-icon
@@ -147,7 +144,7 @@
           <div class="flex items-center gap-4">
             <div class="sm:flex sm:gap-4">
               <a
-                class="rounded-md bg-emerald-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
+                class="rounded-md bg-primary-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm"
                 [routerLink]="['/auth', 'log-in']"
               >
                 Login
@@ -155,7 +152,7 @@
 
               <div class="hidden sm:flex">
                 <a
-                  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-emerald-600"
+                  class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-primary-600"
                   [routerLink]="['/auth', 'register']"
                 >
                   Register

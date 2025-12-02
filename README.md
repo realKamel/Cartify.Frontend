@@ -1,9 +1,9 @@
 
-# 🛒 Fresh Cart: A Modern E-Commerce
+# 🛒 Cartify: A Modern E-Commerce
 
 ## Project Overview
 
-Fresh Cart is a comprehensive e-commerce application developed with Angular, providing a robust and secure shopping experience. The platform is designed for cross-device compatibility, featuring a responsive layout that ensures optimal user interaction on both desktop and mobile devices.
+Cartify is a comprehensive e-commerce application developed with Angular, providing a robust and secure shopping experience. The platform is designed for cross-device compatibility, featuring a responsive layout that ensures optimal user interaction on both desktop and mobile devices.
 
 ## ⭐ Core Features
 
@@ -52,14 +52,14 @@ npm install -g @angular/cli
 1. Clone the project repository from GitHub:
 
     ```bash
-    git clone [https://github.com/realKamel/FreshCart.git](https://github.com/realKamel/FreshCart.git)
+    git clone [https://github.com/realKamel/Cartify.git](https://github.com/realKamel/Cartify.git)
     
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd FreshCart
+    cd Cartify
     
     ```
 
