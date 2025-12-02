@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "FreshCart": {
+    "Cartify": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -66,10 +66,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "FreshCart:build:production"
+              "buildTarget": "Cartify:build:production"
             },
             "development": {
-              "buildTarget": "FreshCart:build:development"
+              "buildTarget": "Cartify:build:development"
             }
           },
           "defaultConfiguration": "development"

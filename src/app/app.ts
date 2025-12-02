@@ -11,7 +11,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('FreshCart');
+  protected readonly title = signal('Cartify');
   readonly isInAuthLayout = signal(false);
   protected readonly toast = toast;
   readonly _AuthService = inject(AuthService);

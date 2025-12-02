@@ -1,6 +1,5 @@
 .mySwiper {
-  --swiper-theme-color: var(--color-emerald-500);
-
+  --swiper-theme-color: var(--color-primary-500);
 }
 
 .swiper-pagination-fraction,

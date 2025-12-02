@@ -58,9 +58,7 @@
     </div>
     <div class="col-span-12 lg:col-span-4 bg-white rounded-lg p-4 shadow grid">
       <div>
-        <p
-          class="text-emerald-600 hover:text-emerald-700 cursor-pointer text-2xl"
-        >
+        <p class="text-black hover:underline cursor-pointer text-2xl">
           {{ product().brand.name }}
         </p>
         <p class="text-gray-700">{{ product().category.name }}</p>
@@ -88,11 +86,11 @@
           </div>
 
           <span
-            class="underline text-emerald-500 flex justify-center items-center gap-1 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm"
+            class="underline text-slate-500 flex justify-center items-center gap-1 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm"
             >{{ product().ratingsQuantity }} Ratings</span
           >
           <span
-            class="bg-emerald-100 flex justify-center items-center gap-1 text-sm text-emerald-800 font-medium me-2 px-2.5 py-0.5 rounded-sm"
+            class="bg-slate-100 flex justify-center items-center gap-1 text-sm text-slate-800 font-medium me-2 px-2.5 py-0.5 rounded-sm"
           >
             <ng-icon name="lucidePlus"></ng-icon> <span>Sold: </span>
             <span>{{ product().sold }}</span>
@@ -112,7 +110,7 @@
             [class]="
               isProductInCart() ? ['bg-red-500', 'hover:bg-red-600'] : ''
             "
-            class="grow text-center bg-emerald-500 rounded p-2 shadow text-white cursor-pointer hover:bg-emerald-600 transition duration-200"
+            class="grow text-center bg-primary-500 rounded p-2 shadow text-white cursor-pointer hover:bg-primary-600 transition duration-200"
           >
             @if (isProductInCart()) {
               <div class="flex justify-center items-center gap-x-1">

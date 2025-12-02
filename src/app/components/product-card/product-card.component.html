@@ -54,7 +54,7 @@
       </p>
 
       <h3
-        class="mt-1.5 overflow-hidden text-ellipsis line-clamp-1 font-medium text-gray-900"
+        class="mt-1.5 overflow-hidden hover:underline text-ellipsis line-clamp-1 font-medium text-gray-900"
       >
         {{ product().title | titlecase }}
       </h3>
@@ -66,7 +66,7 @@
       </span>
       |
       <span
-        class="bg-emerald-100 flex justify-center items-center gap-1 text-sm text-emerald-800 font-medium me-2 px-2.5 py-0.5 rounded-sm"
+        class="bg-slate-100 flex justify-center items-center gap-1 text-sm text-slate-800 font-medium me-2 px-2.5 py-0.5 rounded-sm"
         >{{ product().ratingsQuantity }} ratings
       </span>
     </p>
@@ -85,7 +85,7 @@
           [class]="
             isProductInCart()
               ? ['border-red-600', 'text-red-600', 'hover:bg-red-600']
-              : ['border-emerald-600', 'text-gray-900', 'hover:bg-emerald-600']
+              : ['border-primary-600', 'text-gray-900', 'hover:bg-primary-600']
           "
           title="Add To Cart"
           type="button"

@@ -80,7 +80,7 @@ export class RegisterComponent implements OnDestroy {
         .subscribe({
           next: (result) => {
             toast.success(result.message);
-            this._Router.navigate(['/log-in']);
+            this._Router.navigate(['/auth', 'log-in']);
           },
         });
     } else {

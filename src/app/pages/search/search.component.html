@@ -213,7 +213,7 @@
         </details>
         <div class="flex justify-end items-center z-30">
           <button
-            class="w-full border py-1 cursor-pointer rounded border-emerald-500 text-emerald-500 hover:text-white hover:bg-emerald-500 transition-all duration-200"
+            class="w-full border py-1 cursor-pointer rounded border-primary-500 text-primary-500 hover:text-white hover:bg-primary-500 transition-all duration-200"
             title="confirm"
             (click)="applyUserFilters()"
             type="button"
@@ -231,17 +231,17 @@
             [formControl]="sortCriteria"
             title="Select Sort Method"
             id="sortBy"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-emerald-500 focus:border-emerald-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-emerald-500 dark:focus:border-emerald-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
           >
             <option
               value="null"
-              class="text-emerald-800 hover:bg-emerald-100"
+              class="text-primary-800 hover:bg-primary-100"
               [selected]="sortCriteria.value === null"
             >
               Sort by Default
             </option>
             <option
-              class="hover:bg-emerald-200 text-emerald-800"
+              class="hover:bg-primary-200 text-primary-800"
               value="-ratingsQuantity,-ratingsAverage"
               [selected]="
                 sortCriteria.value === '-ratingsQuantity,-ratingsAverage'
@@ -251,13 +251,13 @@
             </option>
             <option
               [selected]="sortCriteria.value === '-price'"
-              class="text-emerald-800"
+              class="text-primary-800"
               value="-price"
             >
               Sort by Price: High to Low
             </option>
             <option
-              class="text-emerald-800"
+              class="text-primary-800"
               [selected]="sortCriteria.value === 'price'"
               value="price"
             >
@@ -323,7 +323,7 @@
             </li>
           }
           <li
-            class="block size-8 rounded border border-emerald-600 bg-emerald-600 text-center text-sm/8 font-medium text-white"
+            class="block size-8 rounded border border-primary-600 bg-primary-600 text-center text-sm/8 font-medium text-white"
           >
             {{ result().metadata?.currentPage }}
           </li>

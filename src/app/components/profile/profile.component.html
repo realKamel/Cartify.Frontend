@@ -1,7 +1,7 @@
 <section>
   <div class="grid gap-3" [class]="isMobile() ? 'grid-rows-2' : 'grid-cols-2'">
     <div
-      class="bg-white py-4 shadow border-gray-100 rounded-lg dark:border-gray-700 border"
+      class="bg-slate-50 py-4 shadow border-gray-100 rounded-lg dark:border-gray-700 border"
     >
       <h3 class="text-2xl ms-3 mb-1 text-nowrap">Personal Information</h3>
       <form
@@ -207,10 +207,10 @@
             [class]="
               userInfo.valid && !isLoading()
                 ? [
-                    'bg-emerald-600',
-                    'hover:bg-emerald-500',
-                    'focus:border-emerald-700',
-                    'active:bg-emerald-700',
+                    'bg-primary-600',
+                    'hover:bg-primary-500',
+                    'focus:border-primary-700',
+                    'active:bg-primary-700',
                     'cursor-pointer',
                   ]
                 : [
@@ -221,7 +221,7 @@
                     'cursor-not-allowed',
                   ]
             "
-            class="block w-full rounded-md shadow-sm bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300 sm:w-auto px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerlad-700 dark:focus:ring-emerald-800 justify-center border border-transparent text-sm font-medium text-white focus:outline-none focus:shadow-outline-emerald transition duration-150 ease-in-out"
+            class="block w-full rounded-md shadow-sm bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-emerlad-700 dark:focus:ring-primary-800 justify-center border border-transparent text-sm font-medium text-white focus:outline-none focus:shadow-outline-primary transition duration-150 ease-in-out"
           >
             @if (isLoading()) {
               <ng-icon
@@ -236,7 +236,7 @@
       </form>
     </div>
     <div
-      class="bg-white py-4 border-gray-100 shadow rounded-lg dark:border-emerald-700 border w-full"
+      class="bg-white py-4 border-gray-100 shadow rounded-lg dark:border-primary-700 border w-full"
     >
       <h3 class="text-2xl ms-3 mb-1 text-nowrap">Change Password</h3>
       <form
@@ -407,10 +407,10 @@
             [class]="
               userInfo.valid && !isLoading()
                 ? [
-                    'bg-emerald-600',
-                    'hover:bg-emerald-500',
-                    'focus:border-emerald-700',
-                    'active:bg-emerald-700',
+                    'bg-primary-600',
+                    'hover:bg-primary-500',
+                    'focus:border-primary-700',
+                    'active:bg-primary-700',
                     'cursor-pointer',
                   ]
                 : [
@@ -421,7 +421,7 @@
                     'cursor-not-allowed',
                   ]
             "
-            class="flex w-full rounded-md shadow-sm bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-300 sm:w-auto px-5 py-2.5 text-center dark:bg-emerald-600 dark:hover:bg-emerlad-700 dark:focus:ring-emerald-800 justify-center border border-transparent text-sm font-medium text-white focus:outline-none focus:shadow-outline-emerald transition duration-150 ease-in-out"
+            class="flex w-full rounded-md shadow-sm bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-emerlad-700 dark:focus:ring-primary-800 justify-center border border-transparent text-sm font-medium text-white focus:outline-none focus:shadow-outline-primary transition duration-150 ease-in-out"
           >
             @if (isLoading()) {
               <ng-icon
